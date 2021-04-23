@@ -31,6 +31,8 @@ function setup() {
   car.shapeColor = 'purple';
   car.scale = 0.3;
   weight = random(200, 300);
+  //properties of test car
+  car.velocityX = speed;
 
   
 }
@@ -42,9 +44,7 @@ function draw() {
   deformation = (0.5 * weight * speed * speed)/22500;
   
   car.setCollider("rectangle", 35, 0, windowWidth/3, windowHeight/6);
-
-  //properties of test car
-  car.velocityX = speed;
+  
   
   takeTheTest();
 
